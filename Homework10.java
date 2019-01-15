@@ -7,8 +7,9 @@ public class Homework10 {
 	 * 2D array of int values with the designated rows and
 	 * columns
 	 */
+private int[][] arr2D;
 	public Homework10(int rows, int cols) {
-
+		this.arr2D = new int[rows][cols];
 	}
 
 	/* Fill the stored array with increasing values. The
@@ -17,13 +18,19 @@ public class Homework10 {
 	 * row major order. Return the filled array
 	 */
 	public int[][] problem1(int n) {
-
+		for(int r = 0; r < arr2D.length; r++){
+			for(int c = 0; c < arr2D[r].length; c++){
+				arr2D[r][c] = n;
+				n++;
+		}
+	}
+		return arr2D;
 	}
 
 	/* Return row r of the stored array
 	 */
 	public int[] problem2(int r) {
-
+		return arr2D[r];
 	}
 
 	/* Find and return the sum of the indicated cell and its
@@ -32,21 +39,33 @@ public class Homework10 {
 	 * or more neighbors
 	 */
 	public int problem3(int r, int c) {
+		int sum = 0;
+		for(int i = r - 1 )
 
-	}
+
+		}
+
 
 	/* Create and return an ArrayList that contains the
 	 * elements from the indicated column
 	 */
 	public ArrayList<Integer> problem4(int c) {
-
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for(int i = 0; i < arr2D.length; i++){
+			list.add(arr2D[i][c]);
+		}
+		return list;
 	}
 
 	/* Calculate and return the sum of the integers in
 	 * the supplied ArrayList
 	 */
 	public int problem5(ArrayList<Integer> aList) {
-
+		int sum = 0;
+		for(int i = 0; i < aList.size(); i++){
+			sum += aList.get(i);
+		}
+		return sum;
 	}
 
 	public static void main(String[] args) {
