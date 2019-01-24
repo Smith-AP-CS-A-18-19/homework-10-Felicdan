@@ -40,8 +40,13 @@ private int[][] arr2D;
 	 */
 	public int problem3(int r, int c) {
 		int sum = 0;
+<<<<<<< HEAD
 		for(int i = r - 1; i < arr2D.length; i++)
 			if(r)
+=======
+		for(int i = r - 1 )
+
+>>>>>>> 1b33d50622e8f203fcee719e5df10541080c0e96
 
 		}
 
